@@ -44,11 +44,21 @@ body {
 }
 
 .dashboard-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     padding: 30px;
     background-color: #e8f0fe;
     border: 1px solid #ccc;
     border-radius: 8px;
-    text-align: center;
+}
+
+.box-icon {
+    font-size: 28px;
+}
+
+.box-text {
     font-weight: bold;
 }
 
