@@ -40,3 +40,31 @@ body {
     color: white;
     cursor: pointer;
 }
+
+/* Centred banner using Flexbox */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 30px;
+    background-color: #e8f0fe;
+    text-align: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
