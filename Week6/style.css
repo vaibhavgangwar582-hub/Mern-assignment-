@@ -1,72 +1,62 @@
-
-/* 6.1 - Box Model */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
+    margin: 0;
+    padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #f1f5f9;
-    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
 }
 
-/* 6.2 - Profile Cards */
 .profile-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin: 30px auto;
 }
 
 .profile-card {
     width: 300px;
-    padding: 25px;
-    border: 2px solid #cbd5e1;
-    border-radius: 18px;
-    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 15px;
     text-align: center;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .blue-card {
-    background-color: #dbeafe;
-    border-color: #2563eb;
+    background-color: #dceeff;
 }
 
 .green-card {
-    background-color: #dcfce7;
-    border-color: #15803d;
+    background-color: #dcffdc;
 }
 
-/* Circular Avatar */
 .avatar {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 4px solid white;
-    object-fit: cover;
-    margin-bottom: 15px;
+    border: 3px solid #333;
 }
 
-.profile-card h2 {
-    margin-bottom: 10px;
-}
-
-.role {
-    color: #475569;
-    margin-bottom: 15px;
-}
-
-/* 6.3 - Scrollable Bio Box */
 .bio-box {
     height: 120px;
     overflow: auto;
@@ -79,4 +69,19 @@ h1 {
 
 .bio-box p {
     margin-bottom: 12px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 20;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background-color: #222;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
