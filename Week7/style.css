@@ -41,7 +41,7 @@ body {
     cursor: pointer;
 }
 
-/* Centred banner using Flexbox */
+/* Centred banner */
 .banner {
     display: flex;
     flex-direction: column;
@@ -67,4 +67,25 @@ body {
     background-color: #222;
     color: white;
     cursor: pointer;
+}
+
+/* Responsive cards using Flexbox */
+.cards-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 200px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
 }
