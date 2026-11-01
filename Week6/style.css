@@ -17,7 +17,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* 6.2 - Profile Card Layout */
+/* 6.2 - Profile Cards */
 .profile-container {
     display: flex;
     justify-content: center;
@@ -61,6 +61,22 @@ h1 {
     margin-bottom: 10px;
 }
 
-.profile-card p {
+.role {
     color: #475569;
+    margin-bottom: 15px;
+}
+
+/* 6.3 - Scrollable Bio Box */
+.bio-box {
+    height: 120px;
+    overflow: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.bio-box p {
+    margin-bottom: 12px;
 }
