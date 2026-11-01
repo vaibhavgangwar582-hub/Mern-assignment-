@@ -103,3 +103,47 @@ body {
     color: white;
     text-align: center;
 }
+/* Tablet screen */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-right {
+        gap: 12px;
+    }
+
+    .cards-section {
+        padding: 25px;
+    }
+}
+
+/* Mobile screen */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 26px;
+    }
+
+    .cards-section {
+        padding: 20px;
+    }
+
+    .card {
+        flex: 1 1 200px;
+    }
+}
