@@ -8,40 +8,50 @@
 </head>
 <body>
 
+    <!-- Sticky navigation bar -->
     <header class="top-bar">
         <h2>My Profile Cards</h2>
     </header>
 
-    <h1>Our Profiles</h1>
+    <main>
+        <h1>Our Profiles</h1>
 
-    <div class="profile-container">
+        <section class="profile-container">
 
-        <div class="profile-card blue-card">
-            <img src="https://placehold.co/100x100" alt="John Doe" class="avatar">
-            <h2>John Doe</h2>
-            <p>Web Developer</p>
+            <!-- Blue profile card -->
+            <article class="profile-card blue-card">
+                <img src="https://placehold.co/100x100"
+                     alt="John Doe" class="profile-avatar">
 
-            <div class="bio-box">
-                <p>Hello! I am John, a web developer who enjoys creating websites.</p>
-                <p>I work with HTML, CSS and JavaScript to build user-friendly pages.</p>
-                <p>I enjoy learning new technologies and improving my coding skills.</p>
-            </div>
-        </div>
+                <h2>John Doe</h2>
+                <p>Web Developer</p>
 
-        <div class="profile-card green-card">
-            <img src="https://placehold.co/100x100" alt="Jane Doe" class="avatar">
-            <h2>Jane Doe</h2>
-            <p>UI Designer</p>
+                <div class="bio-box">
+                    <p>Hello! I am John, a web developer who enjoys creating websites.</p>
+                    <p>I work with HTML, CSS and JavaScript to build user-friendly pages.</p>
+                    <p>I enjoy learning new technologies and improving my coding skills.</p>
+                </div>
+            </article>
 
-            <div class="bio-box">
-                <p>Hello! I am Jane, a UI designer who loves creative designs.</p>
-                <p>I enjoy choosing colours, arranging layouts and designing interfaces.</p>
-                <p>My goal is to make websites simple and enjoyable to use.</p>
-            </div>
-        </div>
+            <!-- Green profile card -->
+            <article class="profile-card green-card">
+                <img src="https://placehold.co/100x100"
+                     alt="Jane Doe" class="profile-avatar">
 
-    </div>
+                <h2>Jane Doe</h2>
+                <p>UI Designer</p>
 
+                <div class="bio-box">
+                    <p>Hello! I am Jane, a UI designer who loves creative designs.</p>
+                    <p>I enjoy choosing colours, arranging layouts and designing interfaces.</p>
+                    <p>My goal is to make websites simple and enjoyable to use.</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Fixed floating button -->
     <button class="floating-button" aria-label="Add profile">+</button>
 
 </body>
