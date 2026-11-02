@@ -18,7 +18,7 @@ img {
     height: auto;
 }
 
-/* Navbar using Flexbox */
+/* Navbar */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -45,14 +45,14 @@ img {
     font-size: 1rem;
 }
 
-/* Main page sections using Grid */
+/* Main sections */
 main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-/* Hero section */
+/* Hero */
 .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -78,7 +78,7 @@ main {
     cursor: pointer;
 }
 
-/* Services section */
+/* Services */
 .services {
     display: grid;
     grid-template-columns: 1fr;
@@ -110,4 +110,39 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.9rem;
+}
+
+/* Tablet: 768px and above */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        padding: 3rem 2rem;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptop: 1024px and above */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
