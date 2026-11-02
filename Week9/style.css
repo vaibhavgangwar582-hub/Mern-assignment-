@@ -18,7 +18,7 @@ img {
     height: auto;
 }
 
-/* Navbar */
+/* Navbar using Flexbox */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -43,6 +43,13 @@ img {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+}
+
+/* Main page sections using Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 /* Hero section */
@@ -73,6 +80,8 @@ img {
 
 /* Services section */
 .services {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 2rem 1rem;
     text-align: center;
 }
